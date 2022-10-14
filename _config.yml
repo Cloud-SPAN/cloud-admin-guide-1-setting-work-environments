@@ -11,7 +11,7 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Setting the work environment"
+title: "Setting the Cloud and the Linux Environments"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -58,10 +58,10 @@ start_time: 0
 collections:
   episodes:
     output: true
-    permalink: /:path/index.html
+    permalink: /:path
   extras:
     output: true
-    permalink: /:path/index.html
+    permalink: /:path
 
 # Set the default layout for things in the episodes collection.
 defaults:

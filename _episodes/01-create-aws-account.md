@@ -1,5 +1,5 @@
 ---
-title: "QC assembly --- Episode 1"
+title: "Create Your AWS Account"
 teaching: 20
 exercises: 10
 questions: 
@@ -21,20 +21,23 @@ keypoints:
 > - the address (associated with the the credit card)
 {: .prereq}
 
-# Outline
-These are the main steps you will follow to open your AWS account:
+# Introduction
+> ## Steps
+> These are the main steps you will follow to open your AWS account:
+>
+> 1. Sign-up to AWS with your email (as username) and password.
+>
+> 2. Select your account type (**Personal**) and enter your contact information.
+>
+> 3. Enter Billing Information: your credit card details.
+>
+> 4. Confirm your identity to AWS through a phone call or SMS message.
+>
+> 5. Select support plan (**Basic**) and complete sign-up.
+>
+> 6. Login to your AWS account.
+{: .callout}
 
-1. Sign-up to AWS with your email (as username) and password.
-
-2. Select your account type (**Personal**) and enter your contact information.
-
-3. Enter Billing Information: your credit card details.
-
-4. Confirm your identity to AWS through a phone call or SMS message.
-
-5. Select support plan (**Basic**) and complete sign-up.
-
-6. Login to your AWS account.
 
 ## 1. Sign-up to AWS with your email and password
 
