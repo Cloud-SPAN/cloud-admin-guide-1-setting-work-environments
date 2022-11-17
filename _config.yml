@@ -11,7 +11,7 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Setting the Cloud and the Linux Environments"
+title: "Setting Up Your Cloud and Linux Environments"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -58,10 +58,10 @@ start_time: 0
 collections:
   episodes:
     output: true
-    permalink: /:path
+    permalink: /:path/index.html
   extras:
     output: true
-    permalink: /:path
+    permalink: /:path/index.html
 
 # Set the default layout for things in the episodes collection.
 defaults:
@@ -91,4 +91,3 @@ exclude:
 highlighter: rouge
 
 remote_theme: Cloud-SPAN/cloud-admin-guide-theme
-
