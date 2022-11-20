@@ -8,7 +8,7 @@ The Scripts are to be run in a Linux terminal running the Bash shell.
 
 The Scripts have **not** been tested for compatibility with other shells, or on MacOS or Windows using the Git Bash program. The course does not cover such compatibility issues.
 
-The Scripts make use of the **AWS Command Line Interface** (AWS CLI), an open source software tool that enables you to interact with AWS services using commands either in your command-line shell or within shell scripts. The Scripts invoke the AWS CLI to create, allocate, .., and delete AWS services such as instances, storage, domain names, etc. Hence, the AWS CLI must be installed, and be runnable through the *execution path*, in your Linux environment. 
+The Scripts make use of the **AWS Command Line Interface** (AWS CLI), an open source software tool that enables you to interact with AWS services using commands either in your command-line shell or within shell scripts. The Scripts invoke the AWS CLI to create, allocate, .., and delete AWS services such as instances, storage, domain names, etc., within an AWS account. Hence, the AWS CLI must both be installed in your Linux environment and be configured to be able to use and manage resources in your AWS account.
 
 # Options to use the AWS CLI
 Two options are covered in this lesson for using the AWS CLI in a Linux environment: (1) a Linux machine and (2) the AWS CloudShell. A Linux machine environment must be configured with the credentials (private and public keys) that the AWS CLI will use on requesting AWS service operations when invoked within the Scripts. The credentials will be generated using the AWS Console when configuring your AWS account. 
