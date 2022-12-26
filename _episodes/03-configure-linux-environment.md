@@ -23,10 +23,8 @@ keypoints:
 >   - the AWS Console login credentials of your IAM user account: login page, username and password.
 >
 > - for a Linux machine environment you will need:
->   - the access keys associated with your IAM user account.
->   - to have your Linux environment configured with:
->     - the *terminal* program running the Bash shell (default in Linux but check)
->     - these programs installed: `git`, `curl`, `unzip`, `ssh`
+>   - host zone id
+>   - subnet id
 {: .prereq}
 
 # Introduction
@@ -185,9 +183,9 @@ Let's use the `source` command to test the Scripts are accessible through the ex
 
 Enter or copy-paste the following commands:
 ~~~
-$ main_aws_instances_create.sh
+$ csinstances_create.sh
 $ source ~/.bashrc
-$ main_aws_instances_create.sh
+$ csinstances_create.sh
 ~~~
 {: .bash}
 
@@ -195,7 +193,7 @@ The terminal should now look like this:
 
 ![Screen shot of AWS Console page in a browser showing the AWS CloudShell terminal with command lines for install and run one of the Scripts circled](../fig/config-linux-env/06-aws-cloudshell-installing-the-scripts.png){: width="900px"}
 
-The script `main_aws_instances_create.sh` is one the Scripts installed in `~/.local/bincsaws`. You can see in the screenshot that it was not found by the *terminal* before `source` was run to update the execution path, but thereafter it was found and run.  As it requires a parameter (the name of a file), `main_aws_instances_create.sh` only displayed the usage message and finished.
+The script `csinstances_create.sh` is one the Scripts installed in `~/.local/bincsaws`. You can see in the screenshot that it was not found by the *terminal* before `source` was run to update the execution path, but thereafter it was found and run.  As it requires a parameter (the name of a file), `csinstances_create.sh` only displayed the usage message and finished.
 
 Your AWS CloudShell environment is now configured to use the Scripts in the next lesson: [Managing AWS Instances](https://cloud-span.github.io/cloud-admin-guide-2-managing-aws-instances/).
 
@@ -258,19 +256,19 @@ For the Scripts to become thus accessilbe, you need either to launch a new termi
 ~~~
 $ source ~/.bashrc
 ~~~
-{: .output}
+{: .code}
 
-Once you have opened a new terminal or run the `source` command above, the Scripts will be accessible through the execution path and you should be able to run the command below which is one of the Scripts installed in `~/.local/bincsaws`.
+Once you have opened a new terminal or run the `source` command above, the Scripts will be accessible through the execution path and you should be able to run the command `csinstances_create.sh` as shown below. This script is one of the Scripts installed in `~/.local/bincsaws`.
 ~~~
-$ main_aws_instances_create.sh
+$ csinstances_create.sh
 ~~~
 {: .bash}
 
-The output of `main_aws_instances_create.sh` in your terminal should look like this:
+The output of `csinstances_create.sh` in your terminal should look like this:
 
 ![Screen shot of Linux the run of one of the Scripts underlined](../fig/config-linux-env/08-aws-cloudshell-running-script-to-create-instances.png){: width="900px"}
 
-The script `main_aws_instances_create.sh` was found and run, but as it requires a parameter (the name of a file), it only displayed the usage message and finished.
+The script `csinstances_create.sh` was found and run, but as it requires a parameter (the name of a file), it only displayed the usage message and finished.
 
 **Cleaning your environment**
 
