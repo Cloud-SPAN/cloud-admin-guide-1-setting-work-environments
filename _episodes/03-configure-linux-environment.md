@@ -197,15 +197,11 @@ The script `csinstances_create.sh` is one the Scripts installed in `~/.local/bin
 
 Your AWS CloudShell environment is now configured to use the Scripts in the next lesson: [Managing AWS Instances](https://cloud-span.github.io/cloud-admin-guide-2-managing-aws-instances/).
 
-**Cleaning your environment**
+### Don't delete the directory `~/_tmp_cloudspan_aws` where the Scripts where downloaded
 
-Delete the directory where the scripts where downloaded with this command:
-~~~
-$ rm -fr ~/_tmp_cloudspan_aws
-~~~
-{: .bash}
+Please don't delete that directory just yet. We will use some files therein in the next lesson. Once we use those files you will delete that directory.
 
-**Restarting the terminal and the AWS CloudShell**
+### Restarting the terminal and the AWS CloudShell
 
 You can restart the terminal by simply logging out of the terminal through entering  the command `exit` or typing `Ctrl-d` (pressing the keys `Ctrl` and `d` simultaneously). Once you are logged out, press any key for the *terminal* to be launched again. Restarting the terminal is lightweight in that it is relatively quick because only the terminal program is restarted.
 
@@ -270,14 +266,10 @@ The output of `csinstances_create.sh` in your terminal should look like this:
 
 The script `csinstances_create.sh` was found and run, but as it requires a parameter (the name of a file), it only displayed the usage message and finished.
 
-**Cleaning your environment**
 
-Delete the directory where the scripts where downloaded with this command:
-~~~
-$ rm -fr ~/_tmp_cloudspan_aws
-~~~
-{: .bash}
+### Don't delete the directory `~/_tmp_cloudspan_aws` where the Scripts where downloaded
 
+Please don't delete that directory just yet. We will use some files therein in the next lesson. Once we use those files you will delete that directory.
 
 ## 3. Install and configure the AWS CLI in your Linux machine
 
