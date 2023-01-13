@@ -30,7 +30,7 @@ keypoints:
 > 2. **[Secure your AWS Root User account.](#2-secure-your-aws-root-user-account)**\
 > The account your created in the last episode is your Root user account and can perform any operation including closing the account. It is best practice to use the Root user account only for high-level administration and to create the first **IAM** (Identity Access Managment) user account for day-to-day work and account management. It is also best practice to secure the Root user account with multi-factor authentication (MFA).
 >
-> 3. **[Create an IAM user account to create and manage AWS resources.](#3-create-an-iam-user-account-to-create-and-manage-your-instance)**\
+> 3. **[Create an IAM user account to create and manage AWS resources.](#3-create-an-iam-user-account-to-create-and-manage-aws-resources)**\
 > IAM user accounts are attached to a **User Group** that has a set of specific permissions (such as reading, writing and deleting) on specified resources. We will create a User Group with predefined permissions and an IAM user account in that group. 
 >
 > 4. **[Create an alias for your account id.](#4-create-and-alias-for-your-iam-user-acount)**\
@@ -101,7 +101,7 @@ You will see a success message which you can close.
 
 Every time you login to your Root user account, you will be asked to enter your password and an MFA code number which you must read from your mobile by simply opening the MFA app.
 
-## 3. Create an IAM user account to create and manage your instance
+## 3. Create an IAM user account to create and manage AWS resources
 
 We are going to create an IAM user account with which you will be able to create and manage AWS resources. This involves first creating an IAM User Group with one or more security policies, and then your IAM user account within that User Group.
 
