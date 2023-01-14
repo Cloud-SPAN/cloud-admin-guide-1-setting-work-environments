@@ -71,7 +71,7 @@ If you are using an **institutional account** and you cannot set the region to I
 
 To launch the AWS CloudShell, click on its icon at the top: the little square with these two characters "**>_**" inside.
 
-![Screen shot of AWS Console page in a browser with the region menu at the top right and AWS CloudShell option at middle top circled](../fig/config-linux-env/01-console-login-as-iam-user.png){: width="900px"}
+![Screenshot of AWS Console page in a browser with the region menu at the top right and AWS CloudShell option at middle top circled](../fig/config-linux-env/01-console-login-as-iam-user.png){: width="900px"}
 
 You will be presented with the message "Welcome to AWS CloudShell" below. 
 
@@ -79,7 +79,7 @@ If you would like to learn more about the AWS CloudShell (software available, in
 
 Click on **Close** to get to the AWS CloudShell.
 
-![Screen shot of AWS Console page in a browser showing the AWS CloudShell welcome page with the link "Learn more" and the Close button circled](../fig/config-linux-env/02-aws-cloudshell-welcome-page.png){: width="900px"}
+![Screenshot of AWS Console page in a browser showing the AWS CloudShell welcome page with the link "Learn more" and the Close button circled](../fig/config-linux-env/02-aws-cloudshell-welcome-page.png){: width="900px"}
 
 You will now be presented with the AWS CloudShell terminal, like the one below. 
 
@@ -90,7 +90,7 @@ It may take up to a couple of minutes for the AWS CloudShell terminal to be read
 
 The message after the first prompt, "Try these commands to get started: aws help ...", means that the AWS CLI, whose name when used is `aws`, is ready to be used.
 
-![Screen shot of AWS Console page in a browser showing the AWS CloudShell terminal prompt](../fig/config-linux-env/04-aws-cloudshell-ready-screen.png){: width="900px"}
+![Screenshot of AWS Console page in a browser showing the AWS CloudShell terminal prompt](../fig/config-linux-env/04-aws-cloudshell-ready-screen.png){: width="900px"}
 
 ## Download the Scripts
 
@@ -109,7 +109,7 @@ $ ls -a ~
 
 The terminal should now look similar to the following. If so, you have downloaded the Scripts into the **_tmp_cloudspan_aws** directory in your home directory. 
 
-![Screen shot of AWS Console page in a browser showing the AWS CloudShell terminal with git command line, the ls command line and download directory circled](../fig/config-linux-env/05-aws-cloudshell-cloning-the-scripts.png){: width="900px"}
+![Screenshot of AWS Console page in a browser showing the AWS CloudShell terminal with git command line, the ls command line and download directory circled](../fig/config-linux-env/05-aws-cloudshell-cloning-the-scripts.png){: width="900px"}
 
 # 2. Make the Scripts accessible through the execution path
 There are many ways to make the Scripts accessible through the execution path. To avoid any conflicts with the current configuration of the AWS CloudShell, we are going to:
@@ -149,7 +149,7 @@ $ csinstances_create.sh
 
 The terminal should now look like this:
 
-![Screen shot of AWS Console page in a browser showing the AWS CloudShell terminal with command lines for install and run one of the Scripts circled](../fig/config-linux-env/06-aws-cloudshell-installing-the-scripts.png){: width="900px"}
+![Screenshot of AWS Console page in a browser showing the AWS CloudShell terminal with command lines for installing and running one of the Scripts circled](../fig/config-linux-env/06-aws-cloudshell-installing-the-scripts.png){: width="900px"}
 
 The script `csinstances_create.sh` is one the Scripts installed in `~/.local/bincsaws`. You can see in the screenshot that it was not found by the *terminal* before `source` was run to update the execution path, but thereafter it was found and run.  As it requires a parameter (the name of a file), `csinstances_create.sh` only displayed the usage message and finished.
 
@@ -165,6 +165,6 @@ You can restart the terminal by simply logging out of the terminal through enter
 
 You can restart the AWS CloudShell by closing the browser tab and launching CloudShell again, or by clicking on the **Actions** drop-down menu on the top right of the screen and then clicking on **Restart AWS CloudShell**. 
 
-![Screen shot of AWS Console page in a browser showing the AWS CloudShell terminal with the options Actions and "Restart AWS Cloudshell" circled](../fig/config-linux-env/07-aws-cloudshell-actions-menu.png){: width="900px"}
+![Screenshot of AWS Console page in a browser showing the AWS CloudShell terminal with the options Actions and "Restart AWS Cloudshell" circled](../fig/config-linux-env/07-aws-cloudshell-actions-menu.png){: width="900px"}
 
 Restarting the AWS CloudShell through that menu is heavyweight in that it will first stop and then relaunch the AWS Linux instance on which the AWS CloudShell terminal runs. It may be useful if you get stuck within a program and you don't know how to get out (it happened to one of the authors). 

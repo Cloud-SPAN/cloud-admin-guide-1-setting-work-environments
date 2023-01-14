@@ -104,7 +104,7 @@ $ csinstances_create.sh
 
 The output of `csinstances_create.sh` in your terminal should look like this:
 
-![Screen shot of Linux the run of one of the Scripts underlined](../fig/config-linux-env/08-aws-cloudshell-running-script-to-create-instances.png){: width="900px"}
+![Screenshot of Linux terminal with the name of the script "csinstances_create.sh" circled](../fig/config-linux-env/08-aws-cloudshell-running-script-to-create-instances.png){: width="900px"}
 
 The script `csinstances_create.sh` was found and run, but as it requires a parameter (the name of a file), it only displayed the usage message and finished.
 

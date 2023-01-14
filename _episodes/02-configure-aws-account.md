@@ -46,7 +46,7 @@ Once you have logged to your AWS Root user account, your browser will display a 
 
 Change the region to Ireland: click on the region name that is shown and in the drop-down menu that pops up, select **Europe (Ireland) eu-west-1**. 
 
-![Screen shot of AWS Console page in a browser with the region menu at the top right circled](../fig/config-acc/ca01-signedin-options-services-and-cookies.jpg){: width="900px"}
+![Screenshot of AWS Console page in a browser with the region menu at the top right circled](../fig/config-acc/ca01-signedin-options-services-and-cookies.jpg){: width="900px"}
 
 
 > ## Note
@@ -231,7 +231,7 @@ To grant your IAM user account the permissions to access the Billing Dashboard, 
 
 - on the drop-down menu that pops up, click on **Account**
 
-![Screen shot of AWS Console Homme page with the account name menu and the Account option in drop-down menu circled](../fig/config-acc/ca23-root-setup-to-access-billing-info.png){: width="900px"}
+![Screenshot of AWS Console Home page in a browser with the account name menu and the Account option in drop-down menu circled](../fig/config-acc/ca23-root-setup-to-access-billing-info.png){: width="900px"}
 
 On the page that appears:
 
