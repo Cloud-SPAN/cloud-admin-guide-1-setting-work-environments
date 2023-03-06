@@ -104,7 +104,7 @@ $ csinstances_create.sh
 
 The output of `csinstances_create.sh` in your terminal should look like this:
 
-![Screenshot of Linux terminal with the name of the script "csinstances_create.sh" circled](../fig/config-linux-env/08-aws-cloudshell-running-script-to-create-instances.png){: width="900px"}
+![Screenshot of Linux terminal with the name of the script "csinstances_create.sh" circled](../fig/config-linux-env/08-linux-terminal-running-csinstances_create.png){: width="900px"}
 
 The script `csinstances_create.sh` was found and run, but as it requires a parameter (the name of a file), it only displayed the usage message and finished.
 
@@ -131,8 +131,9 @@ If you installed the Scripts somewhere else, then follow the instructions below 
 The script `aws_cli_install_update.sh` either installs or updates the AWS CLI. Enter its name and and press `y` when prompted as to whether to continue, as shown below.
 
 ~~~
-$ aws_cli_install_update.sh
-aws_cli_install_update.sh installs or updates the AWS CLI and the AWS completer locally.
+$ aws_cli_install_update_linux.sh 
+
+aws_cli_install_update_linux.sh  installs or updates the AWS CLI and the AWS completer locally.
  
 Do you want to continue (y/n)?: 
 ~~~
@@ -162,7 +163,7 @@ $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.z
 $ unzip awscliv2.zip   ### (5) unpack the Scripts: creates directory aws in current directory
 
 $                      ### (6) INSTALL AWS CLI:
-$ ./aws/install --bin-dir $HOME/.local/bincsaws --install-dir $HOME/.local/aws-cli2 --update
+$ ./aws/install --bin-dir $HOME/.local/bincsaws --install-dir $HOME/.local/bincsaws/aws-cli2 --update
 
 $                      ### (7) INSTALL AWS CLI COMPLETER:
 $ echo "complete -C $HOME/.local/bincsaws/aws_completer aws" >> ~/.bashrc

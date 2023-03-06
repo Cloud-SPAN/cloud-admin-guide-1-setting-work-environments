@@ -149,7 +149,7 @@ $ csinstances_create.sh
 
 The terminal should now look like this:
 
-![Screenshot of AWS Console page in a browser showing the AWS CloudShell terminal with command lines for installing and running one of the Scripts circled](../fig/config-linux-env/06-aws-cloudshell-installing-the-scripts.png){: width="900px"}
+![Screenshot of AWS Console page in a browser showing the AWS CloudShell terminal with command lines for installing and running one of the Scripts circled](../fig/config-linux-env/06-aws-cloudshell-installing-the-scripts-n-running-csinstances_create.png){: width="900px"}
 
 The script `csinstances_create.sh` is one the Scripts installed in `~/.local/bincsaws`. You can see in the screenshot that it was not found by the *terminal* before `source` was run to update the execution path, but thereafter it was found and run.  As it requires a parameter (the name of a file), `csinstances_create.sh` only displayed the usage message and finished.
 
