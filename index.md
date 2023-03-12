@@ -5,25 +5,24 @@ root: .
 The Bash shell scripts that automatically manage multiple AWS instances will be referred to as the "Scripts" from now on.
 
 We have successfully run the Scripts on:
-- a **Linux machine** using the **terminal** program configured to run the Bash shell
-- the **AWS CloudShell**, a Linux terminal configured likewise that is hosted on AWS and is used through the browser.
+- Linux terminals that run the Bash shell.
+- Windows Git Bash terminals  --- see the [Setup](../setup) section.
+- Mac terminals that run the Bash shell or the Zsh shell --- for both, Bash must be installed or updated to version 5.0 or higher, see the [Setup](../setup) section.
+- the **AWS CloudShell** terminal, a Linux terminal that runs the Bash shell by default. AWS CloudShell is hosted on AWS and is used through the browser.
 
-We **have not tested** the Scripts with other shells, or on MacOS or Windows using the Git Bash program. The course does not cover such compatibility or configuration issues.
-
-The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either in the **terminal** or within **shell scripts**. The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **must be properly configured**.
+The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either within **shell scripts** or in any of those **terminals** above (and others). The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **must be properly configured**.
 
 # Overview
 This lesson will guide you to:
 - create your AWS account.
 - configure your AWS account for daily work, including **enabling access with the AWS CLI**.
-- configure your Linux terminal environment with the Scripts and the AWS CLI, the AWS CLI configured to manage resources within your AWS account --- you can use either of these environments or both:
-  - a Linux machine 
-  - the AWS CloudShell
+- configure your **terminal environment** with the Scripts and the AWS CLI, the AWS CLI configured to manage resources within your AWS account.\
+Your terminal environment can use any of the terminals listed above.
 
 ### Your AWS account
 Episodes 1 and 2 provide the instructions to create and configure your AWS account. 
 
-Note that we organised the instructions in all episodes (4 episodes in lesson 1 and 4 in lesson 2) assuming that you are going to **create and use your own** AWS account, and hence you have full permissions to configure it as instructed in the course --- we refer to such an account as an AWS **personal account**. 
+We organised the instructions in all episodes (4 episodes in lesson 1 and 4 in lesson 2) assuming that you are going to **create and use your own** AWS account, and hence you have full permissions to configure it as instructed in the course --- we refer to such an account as an AWS **personal account**. 
 
 However, **you can use an existing AWS account** you have access to. Throughout the course, where relevant, we point out what "extra" you may need to do to configure your account as required to run the Scripts. 
 
@@ -35,19 +34,15 @@ If the AWS account that you would like to use to run the Scripts is an **institu
 > If your are using an institutional account, you are very likely to be using specific security applications to access your account. For instance:
 > - to access the AWS Console with our institutional AWS account, we use the applications `Shibboleth` and `Duo Mobile`. `Shibboleth` runs in the browser to ask for our username, password, and a pushed notification from `Duo Mobile` in our mobile phone. 
 >
-> - to access AWS services through the AWS CLI, invoked either from a script or from a terminal in our Linux machine, we first need to run the application `saml2aws` to generate a token that is valid for 1 hour, and run it again as needed.
+> - to access AWS services through the AWS CLI, invoked either from a script or from our terminal (environment), we first need to run the application `saml2aws` to generate a token that is valid for 1 hour, and run it again as needed.
 >
 > The course does not cover the configuration and use of those or similar security applications which may be used in your institution. Your IT department will be able to help you. 
 >
 > **Note that**, using our institutional account, we have successfully run the Scripts to access AWS services through the AWS CLI using either `saml2aws` or the keys credentials mentioned above, which we created in the AWS Console. Thus our institutional account, as configured by our IT department, enables access through both `saml2aws` and keys credentials. Only the creation and use of keys credentials is presented in Episodes 2 and 3.
 {: .callout}
  
-### Your Linux terminal environment
-To run the Scripts you need to **configure only one** of these environments:
-- a Linux machine
-- the AWS CloudShell 
-
-Episode 3 provides the instructions to configure your Linux machine with the Scripts and the AWS CLI. The AWS CLI will be configured to use credentials (private and public keys) when invoked within the Scripts to request AWS service operations. The credentials will be generated using the AWS Console when you configure your AWS account in Episode 2. 
+### Your terminal environment
+Episode 3 provides the instructions to install the Scripts and the AWS CLI in your Git Bash, Linux or Mac terminal environment, and to configure the AWS CLI to use your credentials (private and public keys) when invoked within the Scripts to request AWS service operations. The credentials will be generated using the AWS Console when you configure your AWS account in Episode 2. 
 
 Episode 4 provides the instructions to configure the Scripts in the AWS CloudShell. The AWS CloudShell is "a browser-based \[Linux Bash terminal\] shell that gives you command-line access to your AWS resources" and **has the AWS CLI** already **installed and ready to run** using "credentials" derived from the information you use to login to the AWS Console. Hence you only need to configure the Scripts, but **you must be logged in** to your AWS account through **the AWS Console** to be able **to run the AWS CloudShell** and the Scripts.
 
