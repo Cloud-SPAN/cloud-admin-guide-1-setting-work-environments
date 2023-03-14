@@ -14,45 +14,30 @@ keypoints:
 - The configuration of the AWS CLI sets your AWS account as the target account where the Scripts will create and manage AWS resources.
 ---
 > ## Prerequisites
-> To complete this episode you will need:
-> - to have created and configured your AWS account as described in the two previous episodes: [Create Your AWS Account](./01-create-aws-account) and [Configure Your AWS Account](02-configure-aws-account).
-> - your AWS account programmatic access credentials (\*):
->   - Access Key ID 
->   - Secret Access Key
-> - **Windows users**: to have installed Git Bash --- see the [Setup](../setup) section.
-> - **Mac users**: to have installed or updated Bash --- see the [Setup](../setup) section.
-> - **Mac** and **Linux users**: to have installed: `git`, `curl`, `unzip`, `ssh`
+> **Please read [Workshops Organisation](https://cloud-span.github.io/cloud-admin-guide-0-overview#course-overview)** if you haven't done so. To complete this episode you will need:
+> - if you are self-studying the course **or** attending a workshop using **your AWS account**:
+>   - to have created and configured your AWS account as described in the two previous episodes: [Create Your AWS Account](./01-create-aws-account) and [Configure Your AWS Account](02-configure-aws-account).
+>   - your AWS account programmatic access credentials (\*):
+>     - Access Key ID 
+>     - Secret Access Key
+>   - **Windows users**: to have installed Git Bash --- see the [Setup](../setup) section.
+>   - **Mac users**: to have installed or updated Bash --- see the [Setup](../setup) section.
+>   - **Mac** and **Linux users**: to have installed: `git`, `curl`, `unzip`, `ssh`
+> - if you are attending a workshop using a **Cloud-SPAN AWS account** (and an AWS Linux instance):
+>   - to follow the instructions in this episode for Linux terminals.
+>   - **Windows users**: to have installed Git Bash --- see [Workshops Organisation](https://cloud-span.github.io/cloud-admin-guide-0-overview#course-overview) and the [Setup](../setup) section.
 >
 > (\*) Those credentials are in the .csv file you downloaded once you created your IAM account as part of configuring your AWS account. 
 {: .prereq}
 
-> ## If you are taking the course "Automated Management of AWS Instances" at a workshop run by the Cloud-SPAN team, please read these workshops organisation:
-> > ## Cloud-SPAN workshops organisation:
-> > -  If your are attending an online or in-person Cloud-SPAN workshop, the **Prerequisites** above **do not** apply except the one for **Windows users**.\
-Such workshops **only cover** the configuration and use of the Scripts --- the two previous episodes, [Create Your AWS Account](./01-create-aws-account) and [Configure Your AWS Account](02-configure-aws-account), **are not covered**. However, as an AWS account is needed to create and manage AWS instances with the Scripts, as an attendee of such a workshop, an AWS Linux instance will be made available to you (at no cost by the Cloud-SPAN team) wherein you will **configure** the **terminal environment** (as described in this episode) and **run the Scripts** (to create and manage AWS instances) **using** the **Cloud-SPAN AWS account**. To login to your Linux instance you will use the `ssh` program --- and hence **Windows users** do need to install Git Bash prior to the workshop as that will also install `ssh`, see the [Setup](../setup) section. You will receive instructions to login to your Linux instance at or prior to the worshop.
-> > - The course is written for users who will create and configure their AWS account to be used with Scripts, however. Specifically, this episode provides instructions for Linux, Windows and Mac users to configure their terminal environment. Clearly, in Cloud-SPAN workshops, only the instructions for Linux users are relevant for attendees using the Linux instances made available to them. 
-> > - Of course, you can attend a Cloud-SPAN workshop and use **your AWS account** in configuring and running the Scripts following instructions for Linux, Windows or Mac users --- get in touch with the Cloud-SPAN team if you need help to have your AWS account ready before the workshop.
-> {: .solution}
-{: .callout}
-
 # Introduction
-This episode will guide you to configure your **terminal enviroment** so that you can run the Scripts to create and manage instances in your AWS account. 
+This episode will guide you to configure your **terminal enviroment** so that you can run the Scripts to create and manage instances. 
 
 **Configuring** your terminal environment consists of: 
 - installing the **Scripts**
 - installing and configuring the **AWS CLI** to use your AWS account.
 
-**Installing** the Scripts and the AWS CLI includes **downloading** each and **configuring** the execution path of your terminal so that the Scripts and the AWS CLI can be run from any directory location specifying only their name. 
-
-We have successfully configured and run the Scripts in the following terminal environments:
-- Git Bash terminal running on a Windows 10 laptop.
-- Linux terminal running Bash shell.
-- Linux terminal running Bash shell --- Linux being a remote server accessed with `ssh`.
-- Mac terminal running Bash shell.
-- Mac terminal running Bash shell --- Mac being a remote server accessed with `ssh`.
-- Mac terminal running Zsh shell --- Mac being a remote server accessed with `ssh`.
-
-In all Mac terminals above, the Bash shell was updated to version 5.2.15, see the [Setup](../setup) section.
+**Installing** the Scripts and the AWS CLI includes **downloading** each and **configuring** the execution path of your terminal so that the Scripts and the AWS CLI can be run from any directory location only specifying their name. 
 
 # Outline 
 > ## Steps
@@ -69,7 +54,7 @@ In all Mac terminals above, the Bash shell was updated to version 5.2.15, see th
 
 # 1. Installing the Scripts
 ## Download the Scripts from GitHub
-To download the Scripts, open a (Git Bash, Linux or Mac) terminal and enter or copy-paste the git command below (don't include the dollar sign `$`):
+To download the Scripts, open your (Git Bash, Linux or Mac) terminal and enter or copy-paste the git command below (without the dollar sign `$`):
 ~~~
 $ git clone https://github.com/Cloud-SPAN/aws-instances.git  ~/_tmp_cloudspan_aws
 ~~~
@@ -81,9 +66,7 @@ There are many ways to make the Scripts accessible through the execution path. T
 2. copy the Scripts to the new bin directory
 3. add the new bin directory to the execution path
 
-You can copy-paste the commands below to carry out those three steps using `~/.local/bincsaws` as the new bin directory, **but note**:
-
-**If** `~/.local/bincsaws` **already exists** in your environment, choose another name for `bincsaws` and use the new name instead of `bincsaws` in the commands below:
+You can copy-paste the commands below into your terminal to carry out those three steps using `~/.local/bincsaws` as the new bin directory --- if `~/.local/bincsaws` **already exists** in your terminal environment, choose another name for `bincsaws` and use the new name instead of `bincsaws` in the commands below:
 
 ~~~
 $ mkdir -p ~/.local/bincsaws
@@ -91,36 +74,38 @@ $ cp ~/_tmp_cloudspan_aws/*.sh  ~/.local/bincsaws
 ~~~
 {: .bash}
 
-#### **Linux** and **Windows users**:
-~~~
-$ echo "PATH=\"\$HOME/.local/bincsaws:\$PATH\"" >> ~/.bashrc
-~~~
-{: .bash}
+Click the bar that corresponds to your terminal to display the next command you will type or copy-paste into your terminal:
 
-#### **Mac users** whose terminal runs **Bash** shell:
-~~~
-$ echo "PATH=\"\$HOME/.local/bincsaws:\$PATH\"" >> ~/.bash_profile
-~~~
-{: .bash}
+> ## Git Bash and Linux terminal:
+> ~~~
+> $ echo "PATH=\"\$HOME/.local/bincsaws:\$PATH\"" >> ~/.bashrc
+> ~~~
+> {: .bash}
+{: .solution}
 
-#### **Mac users** whose terminal runs **Zsh** shell:
-~~~
-$ echo "PATH=\"\$HOME/.local/bincsaws:\$PATH\"" >> ~/.zshrc
-~~~
-{: .bash}
+> ## Mac terminal that runs **Bash**:
+> ~~~
+> $ echo "PATH=\"\$HOME/.local/bincsaws:\$PATH\"" >> ~/.bash_profile
+> ~~~
+> {: .bash}
+{: .solution}
 
-The last command `echo "PATH=\"\$HOME ...` adds an assignment shell statement at the end of the relevant terminal shell configuration file, either `~/.bashrc` or `~/.bash_profile` or `~/.zshrc`. The statement adds the new bin directory to the execution path which is held by the shell variable PATH.
+> ## Mac terminal that runs **Zsh** shell:
+> ~~~
+> $ echo "PATH=\"\$HOME/.local/bincsaws:\$PATH\"" >> ~/.zshrc
+> ~~~
+> {: .bash}
+{: .solution}
+
+The last command `echo "PATH=\"\$HOME ...` **adds** an assignment shell **statement** at the end of your terminal shell configuration file (either `~/.bashrc` or `~/.bash_profile` or `~/.zshrc` depending on your terminal). 
+
+The statement adds the new bin directory to the execution path which is held by the shell variable PATH.
 
 Since the **terminal** runs the commands in that configuration file every time it is launched, the assigment shell statement (we added) will add the "new" bin directory to the execution path on every subsequent launch of the terminal, thus making the Scripts accessible from any directory location.
 
-You need to open a new terminal, or `source` the shell configuration file for the PATH to get updated: 
+You **need to open** (launch) a new terminal for the execution path to get updated (you can close the old terminal as you won't use it anymore).
 
-~~~
-$ source ~/.bashrc                ### Mac users: "source ~/.bash_profile" or "source ~/.zshrc"
-~~~
-{: .code}
-
-Once you have opened a new terminal or run the `source` command above, the Scripts will be accessible through the execution path and you should be able to run the command `csinstances_create.sh` as shown below. This script is one of the Scripts installed in `~/.local/bincsaws`.
+Once you have opened a new terminal, the Scripts will be accessible through the execution path and you should be able to run the command `csinstances_create.sh` as shown below. This script is one of the Scripts installed in `~/.local/bincsaws`.
 ~~~
 $ csinstances_create.sh
 ~~~
@@ -255,7 +240,7 @@ You will use some files in that directory in the next lesson. Once we use those 
 > ![Screenshot of Linux terminal with the name of the script "csinstances_create.sh" circled](../fig/config-linux-env/10-windows-command-prompt-entering-command-to-install-awscli.png){: width="900px"}
 > 
 > ### **Complete the installation of the AWS CLI**
-> A series of windows will pop up once you launch the installation. The heading of each window is listed below in *italics* and in **bold** what you need to click, check or select on each window (only the first window below the list):
+> A series of windows will pop up once you launch the installation. The heading of each window is listed below in *italics* and in **bold** what you need to click, check or select on each window (only the first window in the list is shown below):
 >
 > - *Welcome to the AWS Command Line Interface v2 Setup Wizard*
 >   - click  **Next**
