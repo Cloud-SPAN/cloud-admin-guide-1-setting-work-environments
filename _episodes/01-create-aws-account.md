@@ -14,11 +14,13 @@ keypoints:
 - The link to login to your account in the AWS Management Console is [https://aws.amazon.com/console](https://aws.amazon.com/console)
 ---
 > ## Prerequisites
-> You will need the following to complete this episode: 
-> - an email address
-> - a credit card --- new accounts get one-year of AWS Free Tier but a card number must be entered on creating an account
-> - the phone number associated with the credit card
-> - the address associated with the credit card
+> **Please read [Workshops Organisation](https://cloud-span.github.io/cloud-admin-guide-0-overview#course-overview)** if you haven't done so. To complete this episode you will need:
+> - if you are self-studying the course **or** attending a workshop using **your AWS account**:
+>   - an email address
+>   - a credit card --- new accounts get one-year of AWS Free Tier but a card number must be entered on creating an account
+>   - the phone number associated with the credit card
+>   - the address associated with the credit card
+> - if you are attending a workshop using a **Cloud-SPAN AWS account** (and an AWS Linux instance), you **don't need** to complete this episode.
 {: .prereq}
 
 # Outline

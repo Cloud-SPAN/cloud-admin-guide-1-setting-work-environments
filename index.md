@@ -4,20 +4,21 @@ root: .
 ---
 The Bash shell scripts that automatically manage multiple AWS instances will be referred to as the "Scripts" from now on.
 
-We have successfully run the Scripts on:
+You can use any of the following terminals to run the Scripts as instructed in this course:
 - Linux terminals that run the Bash shell.
 - Windows Git Bash terminals  --- see the [Setup](../setup) section.
-- Mac terminals that run the Bash shell or the Zsh shell --- for both, Bash must be installed or updated to version 5.0 or higher, see the [Setup](../setup) section.
+- Mac terminals that run the Bash shell or the Zsh shell --- see the [Setup](../setup) section to  install or update Bash; Bash version must be 5.0 or higher.
 - the **AWS CloudShell** terminal, a Linux terminal that runs the Bash shell by default. AWS CloudShell is hosted on AWS and is used through the browser.
 
-The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either within **shell scripts** or in any of those **terminals** above (and others). The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **must be properly configured**.
+Please read **[Workshops Organisation](https://cloud-span.github.io/cloud-admin-guide-0-overview#course-overview)** if you haven't done so.
 
 # Overview
+The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either within **shell scripts** or in any of those **terminals** above (and others). The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **need tos be configured**.
+
 This lesson will guide you to:
 - create your AWS account.
 - configure your AWS account for daily work, including **enabling access with the AWS CLI**.
-- configure your **terminal environment** with the Scripts and the AWS CLI, the AWS CLI configured to manage resources within your AWS account.\
-Your terminal environment can use any of the terminals listed above.
+- configure your **terminal environment** with the Scripts and the AWS CLI, the AWS CLI configured to manage resources within your AWS account.
 
 ### Your AWS account
 Episodes 1 and 2 provide the instructions to create and configure your AWS account. 

@@ -14,10 +14,12 @@ keypoints:
 - Your IAM user account has the permissions of the (account) AdministratorAccess policy, and is hence sufficient for most practical purposes.  
 ---
 > ## Prerequisites
-> To complete this episode you will need:
-> - to have opened your AWS account as described in the first episode of this lesson: [Create Your AWS Account](../01-create-your-account). 
-> - to be logged in to your AWS account as the **Root User** (described also in that episode, at the end). 
-> - ideally, your mobile phone to add multi-factor authentication (**MFA**) to your AWS account. However, **if you don't have a mobile phone, you can skip this step** and still use your AWS account.
+> **Please read [Workshops Organisation](https://cloud-span.github.io/cloud-admin-guide-0-overview#course-overview)** if you haven't done so. To complete this episode you will need:
+> - if you are self-studying the course **or** attending a workshop using **your AWS account**:
+>   - to have opened your AWS account as described in the first episode of this lesson: [Create Your AWS Account](../01-create-your-account). 
+>   - to be logged in to your AWS account as the **Root User** (described also in that episode, at the end). 
+>   - ideally, your mobile phone to add multi-factor authentication (**MFA**) to your AWS account. However, **if you don't have a mobile phone, you can skip this step** and still use your AWS account.
+> - if you are attending a workshop using a **Cloud-SPAN AWS account** (and and AWS Linux instance), you **don't need** to complete this episode.
 {: .prereq}
 
 # Outline
