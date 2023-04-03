@@ -13,7 +13,7 @@ You can use any of the following terminals to run the Scripts as instructed in t
 Please read **[Workshops Organisation](https://cloud-span.github.io/cloud-admin-guide-0-overview#course-overview)** if you haven't done so.
 
 # Overview
-The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either within **shell scripts** or in any of those **terminals** above (and others). The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **need tos be configured**.
+The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either within **shell scripts** or in any of those **terminals** above (and others). The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **need to be configured**.
 
 This lesson will guide you to:
 - create your AWS account.
