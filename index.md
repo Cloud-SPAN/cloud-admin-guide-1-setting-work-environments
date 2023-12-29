@@ -8,8 +8,8 @@ The Bash shell scripts that automatically manage multiple AWS instances will be 
 
 You can use any of the following terminals to run the Scripts as instructed in this course:
 - Linux terminals that run the Bash shell.
-- Windows Git Bash terminals  --- see 2 the [Setup](setup) section.
-- Mac terminals that run the Bash shell or the Zsh shell --- see 3 the [Setup](./setup) section to  install or update Bash; Bash version must be 5.0 or higher.
+- Windows Git Bash terminals  --- see the [Setup](setup) section.
+- Mac terminals that run the Bash shell or the Zsh shell --- see the [Setup](./setup) section to  install or update Bash; Bash version must be 5.0 or higher.
 - the **AWS CloudShell** terminal, a Linux terminal that runs the Bash shell by default. AWS CloudShell is hosted on AWS and is used through the browser.
 
 # Overview
@@ -25,7 +25,7 @@ Episodes 1 and 2 provide the instructions to create and configure your AWS accou
 
 We organised the instructions in all episodes (4 episodes in lesson 1 and 4 in lesson 2) assuming that you are going to **create and use your own** AWS account, and hence you have full permissions to configure it as instructed in the course --- we refer to such an account as an AWS **personal account**. 
 
-However, **you can use an existing AWS account** you have access to. Throughout the course, where relevant, we point out what "extra" you may need to do to configure your account as required to run the Scripts. 
+However, **you can use an existing AWS account** you have access to. Throughout the course, where relevant, we point out what "extra steps" you may need to do to configure your account as required to run the Scripts. 
 
 If you already have an AWS account that you would like to use to run the Scripts, skip Episode 1 and configure your account as described in Episode 2. Specifically, to enable **access with the AWS CLI**, you need to have/create an IAM (Identity and Access Management) user account enabled with **programmatic access** based on **Access key ID** and **Secret access key** credentials, see Episode 2, Section [3. Create an IAM user account to create and manage AWS resources](02-configure-aws-account.md#3-create-an-iam-user-account-to-create-and-manage-aws-resources). If the AWS account your are using is your personal account, you have full permissions to do the configuration presented in that section.
 
