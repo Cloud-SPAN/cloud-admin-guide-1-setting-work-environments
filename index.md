@@ -8,8 +8,8 @@ The Bash shell scripts that automatically manage multiple AWS instances will be 
 
 You can use any of the following terminals to run the Scripts as instructed in this course:
 - Linux terminals that run the Bash shell.
-- Windows Git Bash terminals  --- see the [Setup](../setup) section.
-- Mac terminals that run the Bash shell or the Zsh shell --- see the [Setup](../setup) section to  install or update Bash; Bash version must be 5.0 or higher.
+- Windows Git Bash terminals  --- see 2 the [Setup](setup) section.
+- Mac terminals that run the Bash shell or the Zsh shell --- see 3 the [Setup](./setup) section to  install or update Bash; Bash version must be 5.0 or higher.
 - the **AWS CloudShell** terminal, a Linux terminal that runs the Bash shell by default. AWS CloudShell is hosted on AWS and is used through the browser.
 
 # Overview
