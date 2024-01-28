@@ -10,7 +10,7 @@ You can use any of the following terminals to run the Scripts as instructed in t
 - Linux terminals that run the Bash shell.
 - Windows Git Bash terminals  --- see the [Setup](setup) section.
 - Mac terminals that run the Bash shell or the Zsh shell --- see the [Setup](./setup) section to  install or update Bash; Bash version must be 5.0 or higher.
-- the **AWS CloudShell** terminal, a Linux terminal that runs the Bash shell by default. AWS CloudShell is hosted on AWS and is used through the browser.
+- the **AWS CloudShell** terminal, a Linux terminal that runs the Bash shell by default. The AWS CloudShell is hosted on AWS and is used through the browser.
 
 # Overview
 The Scripts make use of the **AWS Command Line Interface** (AWS CLI), a software tool that enables you to interact with AWS through **commands** that can be run either within **shell scripts** or in any of those **terminals** above (and others). The Scripts run the AWS CLI to make requests to manage (create, allocate, ..., and delete) AWS services such as instances, storage, domain names, etc. For such requests to be successful, the **AWS CLI** and the target **AWS account**, wherein services will be managed, **need to be configured**.

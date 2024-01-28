@@ -101,7 +101,7 @@ The last command `echo "PATH=\"\$HOME ...` **adds** an assignment shell **statem
 
 The statement adds the new bin directory to the execution path which is held by the shell variable PATH.
 
-Since the **terminal** runs the commands in that configuration file every time it is launched, the assigment shell statement (we added) will add the "new" bin directory to the execution path on every subsequent launch of the terminal, thus making the Scripts accessible from any directory location.
+Since the **terminal** runs the commands in that configuration file every time it is launched, that is, every time your login to your instance, the assigment shell statement (we added) will add the "new" bin directory to the execution path on every subsequent launch of the terminal, thus making the Scripts accessible from any directory location.
 
 You **need to open** (launch) a new terminal for the execution path to get updated (you can close the old terminal as you won't use it anymore).
 
